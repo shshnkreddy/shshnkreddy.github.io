@@ -6,7 +6,7 @@
   <title>Shashank Reddy Chirra | PhD Candidate</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -15,8 +15,23 @@
       <div class="brand">Shashank Reddy Chirra</div>
       <nav class="nav">
         <a href="#about">About</a>
-        <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -26,11 +41,13 @@
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="eyebrow">PhD Candidate · University of Oxford</p>
-          <h1><span class="highlight">Shashank Reddy Chirra</span></h1>
+          <h1>Hi, I'm <span class="highlight">Shashank</span></h1>
           <p class="lead">
-            I'm a PhD student at <a href="[flair-link]" class="highlight">FLAIR</a> and the University of Oxford, advised by Prof. Jakob Foerster. My research focuses on cooperative AI and meta-learning (“learning to learn”).
+            I'm a PhD student at <a href="https://foersterlab.com/" class="highlight">FLAIR</a> and the University of Oxford, advised by Prof. Jakob Foerster. My research focuses on cooperative AI and meta-learning (“learning to learn”).
             <br><br>
-            Previously, I worked as a Research Engineer in the <a href="[care-ai-link]" class="highlight">Care.ai Lab</a> at Singapore Management University, advised by Prof. Pradeep Varakantham and Prof. Praveen Paruchuri after graduating from IIIT Bangalore.
+            Previously, I worked as a Research Engineer in the <a href="https://care-ai.smu.edu.sg/" class="highlight">Care.ai Lab</a> at Singapore Management University, advised by Prof. Pradeep Varakantham and Prof. Praveen Paruchuri after graduating from IIIT Bangalore.
+            <br><br>
+            To view my research, please visit my <a href="[google-scholar]" class="highlight">Google Scholar</a>.
           </p>
           <div class="cta-row">
             <a class="btn primary" href="[link-to-cv]" target="_blank" rel="noopener">Download CV</a>
@@ -45,6 +62,7 @@
       </div>
     </section>
 
+    <!--
     <section id="publications" class="section alt">
       <div class="container">
         <div class="section-header">
@@ -71,6 +89,7 @@
         </div>
       </div>
     </section>
+    -->
 
     <section id="contact" class="section alt">
       <div class="container">
@@ -103,12 +122,7 @@
     </div>
   </footer>
 
-  <script>
-    const yearEl = document.getElementById('year');
-    if (yearEl) {
-      yearEl.textContent = new Date().getFullYear();
-    }
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
 
