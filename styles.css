@@ -23,8 +23,8 @@
 }
 
 [data-theme="dark"] {
-  --bg: #111827;
-  --bg-alt: #1f2937;
+  --bg: #000000;
+  --bg-alt: #111111;
   --text: #f9fafb;
   --text-light: #9ca3af;
   --primary: #60a5fa;
@@ -238,7 +238,7 @@ h3 { font-size: 1.125rem; font-weight: 600; }
 
 /* Ensure text on primary button is readable in dark mode if primary color is light */
 [data-theme="dark"] .btn.primary {
-  color: #111827;
+  color: #000000;
 }
 
 .btn.primary:hover {
