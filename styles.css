@@ -1,6 +1,7 @@
 :root {
   /* Colors - Light Theme (Default) */
   --bg: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.85);
   --bg-alt: #f9fafb;
   --text: #1f2937;
   --text-light: #6b7280;
@@ -24,6 +25,7 @@
 
 [data-theme="dark"] {
   --bg: #000000;
+  --bg-glass: rgba(0, 0, 0, 0.85);
   --bg-alt: #111111;
   --text: #f9fafb;
   --text-light: #9ca3af;
@@ -108,7 +110,7 @@ h3 { font-size: 1.125rem; font-weight: 600; }
 
 .lead {
   font-size: 1.1rem;
-  color: var(--text-light);
+  color: var(--text);
   margin-bottom: var(--spacing-lg);
   max-width: 65ch;
 }
@@ -122,10 +124,9 @@ h3 { font-size: 1.125rem; font-weight: 600; }
 .site-header {
   position: sticky;
   top: 0;
-  background-color: var(--bg); /* Fallback */
-  background-color: rgba(var(--bg-rgb), 0.95); /* We need RGB var for alpha, simplifying to just bg for now or specific alpha handling */
-  /* For simplicity in this robust minimal setup, we'll use solid background matching theme or slightly transparent if we had rgb vars */
-  background-color: var(--bg);
+  background-color: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   z-index: 100;
   padding: var(--spacing-md) 0;
@@ -261,7 +262,7 @@ h3 { font-size: 1.125rem; font-weight: 600; }
 .portrait-frame {
   aspect-ratio: 1;
   background-color: var(--bg-alt);
-  border-radius: var(--radius);
+  border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--border);
   max-width: 250px;
