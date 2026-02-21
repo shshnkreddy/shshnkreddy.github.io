@@ -1,13 +1,13 @@
 :root {
   /* Colors - Light Theme (Default) */
-  --bg: #ffffff;
-  --bg-glass: rgba(255, 255, 255, 0.85);
-  --bg-alt: #f9fafb;
-  --text: #1f2937;
-  --text-light: #6b7280;
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
-  --border: #e5e7eb;
+  --bg: #faf9f7;
+  --bg-glass: rgba(250, 249, 247, 0.85);
+  --bg-alt: #f0ede8;
+  --text: #1c1917;
+  --text-light: #78716c;
+  --primary: #b45309;
+  --primary-hover: #92400e;
+  --border: #e2d9cf;
   
   /* Typography */
   --font-sans: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -24,14 +24,14 @@
 }
 
 [data-theme="dark"] {
-  --bg: #000000;
-  --bg-glass: rgba(0, 0, 0, 0.85);
-  --bg-alt: #111111;
-  --text: #f9fafb;
-  --text-light: #9ca3af;
-  --primary: #60a5fa;
-  --primary-hover: #93c5fd;
-  --border: #374151;
+  --bg: #1c1917;
+  --bg-glass: rgba(28, 25, 23, 0.85);
+  --bg-alt: #292524;
+  --text: #e7e5e4;
+  --text-light: #a8a29e;
+  --primary: #f59e0b;
+  --primary-hover: #fbbf24;
+  --border: #44403c;
 }
 
 * {
@@ -237,9 +237,9 @@ h3 { font-size: 1.125rem; font-weight: 600; }
   color: white; /* Keep white for contrast on primary button even in dark mode usually */
 }
 
-/* Ensure text on primary button is readable in dark mode if primary color is light */
+/* Ensure text on primary button is readable in dark mode */
 [data-theme="dark"] .btn.primary {
-  color: #000000;
+  color: #1c1917;
 }
 
 .btn.primary:hover {
